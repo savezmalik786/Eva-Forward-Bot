@@ -21,6 +21,9 @@ logger.setLevel(logging.INFO)
 
 @Client.on_message(filters.command(["index", "batch"]) & filters.user(ADMINS))
 async def gen_link_batch(bot, message):
+    if message.from_user.id != ADMINS:
+        await message.reply_text("sorry bro this bot is admin only use. Please make your owen bot.\nbot repo https://github.com/MrMKN/Eva-Forward-Bot ", disable_web_page_preview = True)                      
+        return   
     if " " not in message.text:
         return await message.reply("Use correct format.\nExample <code>/index {from channel first message link} {form channel last message link}")
     links = message.text.strip().split(" ")
