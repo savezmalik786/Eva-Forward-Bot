@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-@Client.on_message(filters.command(['index']) & filters.user(ADMINS))
+@Client.on_message(filters.command(["index", "batch"]) & filters.user(ADMINS))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
         return await message.reply("Use correct format.\nExample <code>/index {from channel first message link} {form channel last message link}")
