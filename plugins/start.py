@@ -22,7 +22,7 @@ async def start(bot, message):
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text="""Hello I am a Auto Forward Bot devoloped by @kcfilmss & @mr_MKN I can forward files from a Public/Private Channel to a Public/Private Group/Channel.""",
+            text="""Hello I am a Auto Forward Bot devoloped by @kcfilmss & @mr_MKN I can forward files from a Public/Private Channel to a Public/Private Group/Channel.\n\njust send /index to see the magic""",
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -35,7 +35,7 @@ async def start(bot, message):
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(            
-            text="""Hello I am a Auto Forward Bot devoloped by @kcfilmss & @mr_MKN I can forward files from a Public/Private Channel to a Public/Private Group/Channel.""",
+            text="""Hello I am a Auto Forward Bot devoloped by @kcfilmss & @mr_MKN I can forward files from a Public/Private Channel to a Public/Private Group/Channel.\n\njust send /index to see the magic """,
             reply_markup=reply_markup,
             parse_mode='html'
         )
