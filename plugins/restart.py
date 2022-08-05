@@ -16,4 +16,4 @@ async def restart(bot, message):
             )
             await asyncio.sleep(5)
             await msg.edit("<i>Server restarted successfully ✅</i>")
-            os.execl(sys.executable, sys.executable, *sys.argv)
+    os.execl(sys.executable, sys.executable, *sys.argv)
