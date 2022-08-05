@@ -13,11 +13,8 @@ logger = logging.getLogger(__name__)
 
 INDEX_FILES = {}
 
-@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
+@Client.on_message(filters.command("start") & filters.incoming & ~filters.edited & filters.user(ADMINS))
 async def start(bot, message):
-    if message.from_user.id != ADMINS:
-        await message.reply_text("sorry bro this bot is admin only use. Please make your owen bot.\nbot repo https://github.com/MrMKN/Eva-Forward-Bot ", disable_web_page_preview = True)                      
-        return   
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('⚡️ Updates ⚡️', url='https://t.me/mkn_bots_updates'),
