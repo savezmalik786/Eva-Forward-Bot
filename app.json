@@ -2,7 +2,7 @@
     "name": "Auto Forward Bot",
     "description": "I am a Auto Forward Bot, I can forward files from a Public/Private Channel to a Public/Private Group/Channel without SESSION STRING.",
     "keywords": ["telegram", "index"],
-    "repository": "https://github.com/MrMKN/Eva-Forward-Bot",
+    "repository": "https://github.com/savezmalik786/Eva-Forward-Bot",
     "env": {
         "ADMINS": {
             "description": "Id of Admins who have access to Bot. Multiple id use space to split",
